@@ -30,7 +30,7 @@ def handle_response(r, dispatcher: CollectingDispatcher, tracker: Tracker):
         logger.warn(type)
 
         # Login or Register
-        if type == 1:
+        if type == 1 or type == 2:
             user_bean = r['userBean']
 
             cash_balance = user_bean['cash']
@@ -41,6 +41,13 @@ def handle_response(r, dispatcher: CollectingDispatcher, tracker: Tracker):
 
             dispatcher.utter_message(text=bot_message)
             return []
+
+        # Login Error
+        elif type == 3:
+            bot_message = "Your username or password is incorrect..."
+
+            dispatcher.utter_message(text=bot_message)
+            return [SlotSet("name", None), SlotSet("password", None)]
 
 
 
@@ -77,3 +84,48 @@ class RegisterForm(FormAction):
         # utter submit template
         dispatcher.utter_message(template="utter_thanks")
         return handle_response(r, dispatcher, tracker)
+
+class LoginForm(FormAction):
+    """Collects sales information and sends it to back end"""
+
+    def name(self):
+        return "login_form"
+
+    @staticmethod
+    def required_slots(tracker) -> List[Text]:
+        return [
+            "name",
+            "password",
+        ]
+
+    def submit(
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any],
+    ) -> List[EventType]:
+        """Once we have an details, attempt to login at the back end"""
+
+        user = tracker.get_slot("name")
+        password = tracker.get_slot("password")
+
+        request = {'username': user, 'password': password}
+
+        register_url = URL + "login"
+
+        r = requests.post(url=register_url, json=request).json()
+
+        # utter submit template
+        dispatcher.utter_message(text="You're logging in...")
+        handle_response(r, dispatcher, tracker)
+        return []
+
+class ActionLogOut(Action):
+
+    def name(self) -> Text:
+        return "action_log_out"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        return [SlotSet("name", None), SlotSet("password", None)]

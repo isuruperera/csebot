@@ -92,3 +92,20 @@
 - Why do you need it
 - why do you need to know that?
 - could you explain why you need it?
+
+## intent:login
+- can I login?
+- can I log in?
+- login
+- Login
+- log in
+- Log in
+- I want to login
+- I wanna login
+- I would like to login
+
+## intent:log_out
+- Log out
+- Logout
+- I want to logout
+- I want to log out

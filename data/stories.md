@@ -53,3 +53,27 @@
     - utter_explain_why_password
     - register_form
     - form{"name": null}
+    
+## explain login name
+* login
+    - login_form
+    - form{"name": "login_form"}
+    - slot{"name": "name"}
+* explain
+    - utter_explain_why_name
+    - login_form
+    - form{"name": null}
+
+## explain login password
+* login
+    - login_form
+    - form{"name": "login_form"}
+    - slot{"password": "password"}
+* explain
+    - utter_explain_why_password
+    - login_form
+    - form{"name": null}
+    
+## log out
+* log_out
+  - action_log_out

@@ -6,10 +6,22 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - register
   - explain
-  - get_user_name
-  - get_password
+  - get_password:
+      use_entities:
+        - password
+  - get_user_name:
+      use_entities:
+        - name
+  - register:
+      use_entities:
+        - name
+        - password
+  - login:
+      use_entities:
+        - name
+        - password
+  - log_out
 
 entities:
   - name
@@ -31,9 +43,12 @@ actions:
   - utter_success
   - utter_thanks
   - utter_why
+  - action_login
+  - action_log_out
 
 forms:
   - register_form
+  - login_form
 
 responses:
   utter_greet:
