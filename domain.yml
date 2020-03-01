@@ -22,10 +22,23 @@ intents:
         - name
         - password
   - log_out
+  - trade
+  - get_amount:
+      use_entities:
+        - amount
+  - get_price:
+      use_entities:
+        - price
+  - buy_button
+  - sell_button
+  - confirm_button
+  - cancel_button
 
 entities:
   - name
   - password
+  - amount
+  - price
 
 actions:
   - utter_ask_name
@@ -45,38 +58,49 @@ actions:
   - utter_why
   - action_login
   - action_log_out
+  - action_buy
+  - action_sell
+  - action_trade
+  - action_trade_cancel
+  - action_trade_confirm
+  - action_trade_confirm_prompt
+  - utter_ask_amount
+  - utter_ask_price
+  - utter_explain_why_amount
+  - utter_explain_why_price
 
 forms:
   - register_form
   - login_form
+  - trade_form
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Hi"
-  - text: "Hello"
-  - text: "Hola"
+    - text: "Hey! How are you?"
+    - text: "Hi"
+    - text: "Hello"
+    - text: "Hola"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
-  - text: "Good!"
-  - text: "It's nice"
+    - text: "Great, carry on!"
+    - text: "Good!"
+    - text: "It's nice"
 
   utter_goodbye:
-  - text: "Bye"
-  - text: "See you..."
-  - text: "Ok"
+    - text: "Bye"
+    - text: "See you..."
+    - text: "Ok"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-  - text: "I am the CSE bot"
+    - text: "I am a bot, powered by Rasa."
+    - text: "I am the CSE bot"
 
   utter_ask_name:
     - text: Could you tell me your name please?
@@ -89,9 +113,6 @@ responses:
 
   utter_explain_why_password:
     - text: We need a unique password from you to identify it's you...
-
-  utter_success:
-    - text: I've got all details for the trade... Do you want to confirm?
 
   utter_thanks:
     - text: Thanks for registering. Anything else?
@@ -108,10 +129,31 @@ responses:
   utter_error:
     - text: Oh boy... Something went wrong...
 
+  utter_ask_amount:
+    - text: How much do you need to Buy or Sell?
+
+  utter_ask_price:
+    - text: What's the price you're willing to Buy/Sell Stocks?
+
+  utter_explain_why_amount:
+    - text: We need to know whether you how much you need to Buy or Sell
+
+  utter_explain_why_price:
+    - text: We need to know what's the price you're willing to buy or sell
+
+  utter_success:
+    - text: I've got all details for the trade... Do you want to confirm?
+
 slots:
   name:
     type: unfeaturized
   password:
+    type: unfeaturized
+  amount:
+    type: unfeaturized
+  price:
+    type: unfeaturized
+  side:
     type: unfeaturized
 
 session_config:

@@ -77,3 +77,59 @@
 ## log out
 * log_out
   - action_log_out
+  
+## explain trade init
+* trade
+  - action_trade
+    
+## explain buy amt
+* buy_button
+    - action_buy
+    - trade_form
+    - form{"name": "trade_form"}
+    - slot{"amount": "amount"}
+* explain
+    - utter_explain_why_amount
+    - trade_form
+    - form{"name": null}
+    
+## explain sell amt
+* sell_button
+    - action_sell
+    - trade_form
+    - form{"name": "trade_form"}
+    - slot{"amount": "amount"}
+* explain
+    - utter_explain_why_amount
+    - trade_form
+    - form{"name": null}
+ 
+## explain buy price
+* buy_button
+    - action_buy
+    - trade_form
+    - form{"name": "trade_form"}
+    - slot{"price": "price"}
+* explain
+    - utter_explain_why_price
+    - trade_form
+    - form{"name": null}
+    
+## explain sell price
+* sell_button
+    - action_sell
+    - trade_form
+    - form{"name": "trade_form"}
+    - slot{"price": "price"}
+* explain
+    - utter_explain_why_price
+    - trade_form
+    - form{"name": null}
+    
+## confirm trade
+* confirm_button
+  - action_trade_confirm
+  
+## cancel trade
+* cancel_button
+  - action_trade_cancel
