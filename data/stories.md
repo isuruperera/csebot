@@ -29,3 +29,27 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## answer explain single
+* explain
+    - utter_why
+  
+## explain name
+* register
+    - register_form
+    - form{"name": "register_form"}
+    - slot{"name": "name"}
+* explain
+    - utter_explain_why_name
+    - register_form
+    - form{"name": null}
+
+## explain password
+* register
+    - register_form
+    - form{"name": "register_form"}
+    - slot{"password": "password"}
+* explain
+    - utter_explain_why_password
+    - register_form
+    - form{"name": null}

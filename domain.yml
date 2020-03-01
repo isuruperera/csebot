@@ -6,10 +6,41 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - register
+  - explain
+  - get_user_name
+  - get_password
+
+entities:
+  - name
+  - password
+
+actions:
+  - utter_ask_name
+  - utter_ask_password
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_error
+  - utter_explain_why_name
+  - utter_explain_why_password
+  - utter_fallback
+  - utter_goodbye
+  - utter_greet
+  - utter_happy
+  - utter_iamabot
+  - utter_success
+  - utter_thanks
+  - utter_why
+
+forms:
+  - register_form
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hi"
+  - text: "Hello"
+  - text: "Hola"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -20,12 +51,53 @@ responses:
 
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Good!"
+  - text: "It's nice"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "See you..."
+  - text: "Ok"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  - text: "I am the CSE bot"
+
+  utter_ask_name:
+    - text: Could you tell me your name please?
+
+  utter_ask_password:
+    - text: What will be your secret word for trading?
+
+  utter_explain_why_name:
+    - text: We need to know your name to register you...
+
+  utter_explain_why_password:
+    - text: We need a unique password from you to identify it's you...
+
+  utter_success:
+    - text: I've got all details for the trade... Do you want to confirm?
+
+  utter_thanks:
+    - text: Thanks for registering. Anything else?
+
+  utter_why:
+    - text: Do we even know why, what or how any of the things happening in the universe?
+
+  utter_fallback:
+    - text: Oh boy! I couldn't understand that. Can you tell it in a different way?
+    - text: Ummm... No sir, you have to tell that in a different way...
+    - text: Can you tell that in a different way...
+    - text: Can you please please... tell that in a different way...
+
+  utter_error:
+    - text: Oh boy... Something went wrong...
+
+slots:
+  name:
+    type: unfeaturized
+  password:
+    type: unfeaturized
 
 session_config:
   session_expiration_time: 60

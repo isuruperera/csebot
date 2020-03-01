@@ -54,3 +54,41 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:register
+- can I register?
+- register
+- I need to register
+- I want to register
+- I wanna register
+- I would like to register
+- Register me
+
+## intent:get_user_name
+- My name is [Isuru](name)
+- I'm [Tharanga](name)
+- [Tharanga](name)
+- [Isuru](name)
+- [Isuru](name)
+
+## intent:get_password
+- My password is [Password](password)
+- My password is [123](password)
+- My secret is [Password](password)
+- My secret is [123](password)
+- I will use [123](password)
+- I will use [Password](password)
+- password [Password](password)
+- password [123](password)
+- secret [Password](password)
+- secret [123](password)
+- [123](password)
+
+## intent:explain
+- why?
+- why
+- Why
+- why do you need it
+- Why do you need it
+- why do you need to know that?
+- could you explain why you need it?
