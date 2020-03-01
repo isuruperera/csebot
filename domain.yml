@@ -33,6 +33,7 @@ intents:
   - sell_button
   - confirm_button
   - cancel_button
+  - check_balance
 
 entities:
   - name
@@ -68,6 +69,7 @@ actions:
   - utter_ask_price
   - utter_explain_why_amount
   - utter_explain_why_price
+  - action_check_balance
 
 forms:
   - register_form

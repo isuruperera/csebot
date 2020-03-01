@@ -133,3 +133,7 @@
 ## cancel trade
 * cancel_button
   - action_trade_cancel
+  
+## check balance
+* check_balance
+  - action_check_balance

@@ -171,3 +171,17 @@
 - [8](price) LKR
 - [26](price) LKR
 - [73](price) LKR
+
+## intent:check_balance
+- check my balance
+- balance
+- How much shares do I have
+- I would like to know my balance
+- What is my balance?
+- Check balance
+- Check my balance
+- Cash balance
+- Stock balance
+- How much cash do I have?
+- How many stocks do I have?
+- How much stocks do I have?

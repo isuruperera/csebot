@@ -77,6 +77,19 @@ def handle_response(r, dispatcher: CollectingDispatcher, tracker: Tracker):
             dispatcher.utter_message(text=bot_message)
             return [SlotSet("amount", None), SlotSet("price", None), SlotSet("side", None)]
 
+        # Check Balance
+        elif type == 4:
+            user_bean = r['userBean']
+
+            cash_balance = user_bean['cash']
+            stock_balance = user_bean['stocks']
+
+            bot_message = "You have: " + str(cash_balance) + " LKR Cash Balance and " \
+                          + str(stock_balance) + " Stock holdings"
+
+            dispatcher.utter_message(text=bot_message)
+            return []
+
 
 
 class RegisterForm(FormAction):
@@ -370,3 +383,32 @@ class ActionTradeCancel(Action):
         dispatcher.utter_message("Trade Cancelled...")
 
         return [SlotSet("amount", None), SlotSet("price", None), SlotSet("side", None)]
+
+class ActionCheckBalance(Action):
+
+    def name(self) -> Text:
+        return "action_check_balance"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user = tracker.get_slot("name")
+        password = tracker.get_slot("password")
+
+        if (user == None or password == None):
+            dispatcher.utter_message(
+                "You need to login or register first...")
+            return []
+        else:
+
+            request = {'username': user, 'password': password}
+
+            request_url = URL + "balance"
+
+            r = requests.post(url=request_url, json=request).json()
+
+            dispatcher.utter_message(
+                "Checking your balance...")
+
+            return handle_response(r, dispatcher, tracker)
