@@ -1,5 +1,5 @@
 language: en
-
+# Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 
 pipeline:
@@ -10,6 +10,8 @@ pipeline:
   - name: DIETClassifier
     epochs : 100
 
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
 policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
