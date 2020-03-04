@@ -47,7 +47,7 @@
 ## explain password
 * register
     - register_form
-    - form{"name": "register_form"}
+    - form{"password": "register_form"}
     - slot{"password": "password"}
 * explain
     - utter_explain_why_password
@@ -67,12 +67,12 @@
 ## explain login password
 * login
     - login_form
-    - form{"name": "login_form"}
+    - form{"password": "login_form"}
     - slot{"password": "password"}
 * explain
     - utter_explain_why_password
     - login_form
-    - form{"name": null}
+    - form{"password": null}
     
 ## log out
 * log_out
