@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Text, Union
 logger = logging.getLogger(__name__)
 
 # URL to our Back End Server
-URL = "http://cse-bot-api.research.directfn.net//api/"
+URL = "http://cse-bot-api.research.directfn.net/api/"
 
 # Handles responses from the Back End Server
 def handle_response(r, dispatcher: CollectingDispatcher, tracker: Tracker):
