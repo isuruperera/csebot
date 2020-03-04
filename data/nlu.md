@@ -65,36 +65,124 @@
 - Register me
 
 ## intent:get_user_name
+- My name is [Isuru Tharanga](name)
 - My name is [Isuru](name)
-- My name is [asdasd](name)
-- My name is [123asd](name)
-- My name is [Isuru2](name)
-- My name is [Isurau2](name)
+- My name is [Kasun](name)
+- My name is [Shan](name)
+- My name is [Emindu](name)
+- My name is [John](name)
+- My name is [Punsiru](name)
+- My name is [perera](name)
+- My name is [eminda](name)
+- My name is [sdfsd](name)
+- My name is [dasfsdfsd](name)
+- My name is [ioerwue](name)
+- My name is [cuozxicu](name)
+- My name is [kalsdnas](name)
+- My name is [Perera](name)
+- My name is [Monika](name)
+- My name is [Tarzen](name)
+- My name is [Jane](name)
+- My name is [Nishara](name)
+- My name is [Kesh](name)
+- My name is [KLJSDFL](name)
+- My name is [FSDFSDF](name)
+- My name is [DSFSDF](name)
+- My name is [SDF](name)
+- My name is [Building](name)
+- My name is [SDFSDF](name)
+- My name is [Building](name)
+- My name is [DFSDFSDF](name)
+- My name is [Isuru](name)
+- My name is [Kasun](name)
+- My name is [Shan](name)
+- My name is [Emindu](name)
+- I'm [John](name)
+- I'm [Punsiru](name)
+- I'm [perera](name)
+- I'm [eminda](name)
+- I'm [sdfsd](name)
+- I'm [dasfsdfsd](name)
+- I'm [ioerwue](name)
+- I'm [cuozxicu](name)
+- I'm [adfasdf](name)
+- I'm [Perera](name)
+- I'm [Hasdf](name)
+- I'm [Tarzen](name)
+- I'm [Jane](name)
+- I'm [Nishara](name)
+- I'm [Kesh](name)
+- I'm [KLJSDFL](name)
+- I'm [KJJHKJH](name)
+- I'm [DSFSDF](name)
+- I'm [SDF](name)
+- I'm [Building](name)
+- I'm [SDFSDF](name)
+- I'm [Building](name)
+- I'm [DFSDFSDF](name)
+- I'm [Tharanga Isuru](name)
 - I'm [Tharanga](name)
-- I'm [Isuru2](name)
-- I'm [tuy6132na](name)
-- I'm [ADWE](name)
-- I'm [abc121](name)
-- I'm [asf41356](name)
+- [John](name)
+- [Punsiru](name)
+- [perera](name)
+- [eminda](name)
+- [sdfsd](name)
+- [dasfsdfsd](name)
+- [ioerwue](name)
+- [cuozxicu](name)
+- [kalsdnas](name)
+- [Perera](name)
+- [Monika](name)
+- [Tarzen](name)
+- [Jane](name)
+- [Nishara](name)
+- [Kesh](name)
+- [KLJSDFL](name)
+- [FSDFSDF](name)
+- [DSFSDF](name)
+- [SDF](name)
+- [Building](name)
+- [SDFSDF](name)
+- [Building](name)
+- [DFSDFSDF](name)
+- [Tharanga Isuru](name)
 - [Tharanga](name)
-- [Tharanga12](name)
-- [123Isuru](name)
-- [Isuru](name)
-
-
 
 ## intent:get_password
-- My password is [abc](password)
+- My password is [Password](password)
+- My password is [Iasdasf](password)
+- My password is [Rassdfasdf](password)
+- My password is [safsd](password)
+- My password is [2314](password)
+- My password is [12sddf2123](password)
+- My password is [123wer](password)
+- My password is [3142234](password)
+- My password is [3r3](password)
+- My password is [4324](password)
+- My password is [sddfg34214](password)
+- My password is [aswe](password)
 - My password is [123](password)
-- My secret is [Abc](password)
-- I will use [Pwd](password)
-- password [154](password)
-- password is [154](password)
-- secret [124](password)
-- [psswd123](password)
+- My secret is [Password](password)
+- My secret is [123](password)
+- My secret is [23424](password)
+- My secret is [sadfsadf](password)
+- My secret is [KLJHKLH](password)
+- My secret is [IUY&*))](password)
+- My secret is [OIJKLJL](password)
+- My secret is [asdkjdj234](password)
+- My secret is [sadfsadf](password)
+- I will use [94550](password)
+- I will use [POsdaf](password)
+- I will use [asdfOIU](password)
+- I will use [OOIPiuods](password)
+- I will use [Password](password)
+- I will use [Password](password)
+- I will use [Password](password)
+- password [Password](password)
+- password [123](password)
+- secret [Password](password)
+- secret [123](password)
 - [123](password)
-- [qwerty](password)
-- [321](password)
 
 ## intent:explain
 - why?
@@ -137,8 +225,20 @@
 
 ## intent:get_amount
 - I need to buy [10](amount)
-- I want to buy [15](amount)
-- I wanna buy [8](amount)
+- I need to buy [23](amount)
+- I need to buy [423](amount)
+- I need to buy [23](amount)
+- I need to buy [3](amount)
+- I need to buy [6](amount)
+- I need to buy [45](amount)
+- I need to buy [0](amount)
+- I need to buy [9](amount)
+- I need to buy [8](amount)
+- I need to buy [8](amount)
+- I need to buy [34](amount)
+- I need to buy [1243](amount)
+- I want to buy [124](amount)
+- I wanna buy [112](amount)
 - I need to sell [75](amount)
 - I want to sell [42](amount)
 - I wanna sell [18](amount)
@@ -146,6 +246,15 @@
 - I want to trade [3](amount)
 - I wanna trade [6](amount)
 - Buy [16](amount)
+- Buy [16](amount)
+- Buy [21](amount)
+- Buy [64](amount)
+- Buy [23](amount)
+- Buy [89](amount)
+- Buy [243](amount)
+- Buy [12](amount)
+- Buy [112](amount)
+- Buy [12](amount)
 - Sell [15](amount)
 - trade [23](amount)
 - I will buy [42](amount)
@@ -155,8 +264,16 @@
 - [63](amount) stocks
 - [8](amount) stocks
 - [5](amount) stocks
-- [12](amount) stocks
+- [98](amount) stocks
+- [7](amount) stocks
+- [9](amount) stocks
+- [76](amount) stocks
+- [54](amount) stocks
 - [17](amount) stocks
+- [12](amount) stocks
+- [6](amount) stocks
+- [1](amount) stocks
+- [3](amount) stocks
 
 ## intent:get_price
 - I will pay [10](price)
@@ -167,7 +284,22 @@
 - sell at [2](price)
 - at [1](price)
 - [1](price) LKR
+- [12](price) LKR
+- [16](price) LKR
+- [5](price) LKR
+- [4](price) LKR
+- [75](price) LKR
+- [9](price) LKR
+- [21](price) LKR
+- [36](price) LKR
+- [32](price) LKR
+- [45](price) LKR
 - [10](price) LKR
+- [12](price) LKR
+- [2](price) LKR
+- [8](price) LKR
+- [7](price) LKR
+- [23](price) LKR
 - [15](price) LKR
 - [8](price) LKR
 - [26](price) LKR
