@@ -89,6 +89,7 @@
 - My secret is [Abc](password)
 - I will use [Pwd](password)
 - password [154](password)
+- password is [154](password)
 - secret [124](password)
 - [psswd123](password)
 - [123](password)
